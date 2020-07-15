@@ -1,5 +1,4 @@
-# Coronavirus
-Analysis of Coronavirus in Uruguay
+# Analysis of Coronavirus in Uruguay
 
 The aim of this project is to showcase the current and historical trend in Coronavirus infections in Uruguay, and compare them to the regional trends.
 
