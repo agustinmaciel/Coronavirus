@@ -15,4 +15,6 @@ The latest Power BI file with all the KPIs and charts.
 The file with some of the static data (Nurses, Medics and Hospital Beds by Country)
 
 
-### Other data is pulled directly from the JKU repository.
+### Other data is pulled directly from the <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) repository</a>
+
+
