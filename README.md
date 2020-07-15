@@ -12,9 +12,13 @@ The latest Power BI file with all the KPIs and charts.
 
 ## Coronavirus.xlsx
 
-The file with some of the static data (Nurses, Medics and Hospital Beds by Country)
+The file with the static data (Nurses, Medics and Hospital Beds by Country), downloaded from the [WHO Global Health Observatory data repository](https://apps.who.int/gho/data/node.home).
 
 
-### Other data is pulled directly from the <a href="https://github.com/CSSEGISandData/COVID-19" target="_blank">Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) repository</a>
+---
+
+
+
+#### Daily cases, deaths and recovered patients data is pulled directly from the [Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) repository](https://github.com/CSSEGISandData/COVID-19).
 
 
