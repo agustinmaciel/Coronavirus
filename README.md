@@ -16,6 +16,11 @@ The latest Power BI file with all the KPIs and charts.
 The file with the static data (Nurses, Medics and Hospital Beds by Country), downloaded from the [WHO Global Health Observatory data repository](https://apps.who.int/gho/data/node.home).
 
 
+
+## DataModel.PNG
+
+The screenshot of the data model with the structure of the tables and the fields on each table.
+
 ---
 
 
