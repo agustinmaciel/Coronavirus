@@ -3,7 +3,7 @@
 The aim of this project is to showcase the current and historical trend in Coronavirus infections in Uruguay, and compare them to the regional trends.
 
 The project is already live and automatically updating information on a daily basis (it still needs some aesthetic updates) and can be seen here: 
-[Coronavirus in Uruguay](https://bit.ly/3h8AILX)
+[Coronavirus in Uruguay](https://bit.ly/3a6ggZT)
 
 
 ## Coronavirus in Uruguay.pbix
