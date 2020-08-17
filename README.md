@@ -11,7 +11,7 @@ The project is already live and automatically updating information on a daily ba
 The latest Power BI file with all the KPIs and charts.
 
 
-## Coronavirus.xlsx
+## RegionalHealthForce.xlsx
 
 The file with the static data (Nurses, Medics and Hospital Beds by Country), downloaded from the [WHO Global Health Observatory data repository](https://apps.who.int/gho/data/node.home).
 
