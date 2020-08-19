@@ -42,27 +42,86 @@ The project is already live and automatically updating information on a daily ba
 
 ### Tables and fields
 
-#### Dates
+* #### Dates
 
 | Field Name | Data Type | Description | Source |
 | ----------- | ----------- | ----------- | ----------- |
-| Date (bins) | date | Dates grouped by weekly bins | JHU CSSE |
-| Dates Reformatted | date | Dates with format changed from English to Spanish | JHU CSSE |
+| Date (bins) | date | New daily cases dates grouped by weekly bins | JHU CSSE |
+| Dates Reformatted | date | New daily cases dates with format changed from English to Spanish | JHU CSSE |
 | Max Date | date | Calculated field to display the latest data update | JHU CSSE |
 
 
-#### Cases and Deaths
+* #### Cases
 
 | Field Name | Data Type | Description | Source |
 | ----------- | ----------- | ----------- | ----------- |
-| Cases | integer |Total cases grouped by country | JHU CSSE |
-| Country | string | Country | JHU CSSE |
+| Argentina | integer | New daily cases in Argentina | JHU CSSE |
+| Brazil | integer | New daily cases in Brazil | JHU CSSE |
+| Chile | integer | New daily cases in Chile | JHU CSSE |
+| Date | date | Date of new daily cases | JHU CSSE |
 | Dates Reformatted | date | Dates with format changed from English to Spanish | JHU CSSE |
-| Deaths | integer | Total deaths grouped by country | JHU CSSE |
 | Index | integer | Table Index | Power BI |
+| NewCasesUY | integer | Total cases in Uruguay | JHU CSSE |
+| Original Date | date | Original date of new daily cases | JHU CSSE |
+| Paraguay | integer | New daily cases in Uruguay | JHU CSSE |
+| PrevObjUY | integer | Calculated column with the value from the previous date for Uruguay | - |
+| Uruguay | integer | New daily cases in Uruguay | JHU CSSE |
+| CasesPopAR | integer | Calculated measure of cases by population in Argentina | - |
+| CasesPopBR | integer | Calculated measure of cases by population in Brazil | - |
+| CasesPopCH | integer | Calculated measure of cases by population in Chile | - |
+| CasesPopPY | integer | Calculated measure of cases by population in Paraguay | - |
+| CasesPopUY | integer | Calculated measure of cases by population in Uruguay | - |
 
 
-#### Health Force and Population
+* #### Deaths
+
+| Field Name | Data Type | Description | Source |
+| ----------- | ----------- | ----------- | ----------- |
+| Argentina | integer | New daily deaths in Argentina | JHU CSSE |
+| Brazil | integer | New daily deaths in Brazil | JHU CSSE |
+| Chile | integer | New daily deaths in Chile | JHU CSSE |
+| Dates Reformatted | date | Dates with format changed from English to Spanish | JHU CSSE |
+| DeathsUY | integer | Total deaths in Uruguay | JHU CSSE |
+| Index | integer | Table Index | Power BI |
+| Paraguay | integer | New daily deaths in Paraguay | JHU CSSE |
+| PrevObjAR | integer | Calculated column with the value from the previous date for Argentina | - |
+| PrevObjBR | integer | Calculated column with the value from the previous date for Brazil  | - |
+| PrevObjCH | integer | Calculated column with the value from the previous date for Chile  | - |
+| PrevObjPY | integer | Calculated column with the value from the previous date for Paraguay  | - |
+| PrevObjUY | integer | Calculated column with the value from the previous date for Uruguay  | - |
+| Uruguay | integer | New daily deaths in Uruguay | JHU CSSE |
+| DeatsPopAR | integer | Calculated measure of deaths by population in Argentina | - |
+| DeatsPopBR | integer | Calculated measure of deaths by population in Brazil | - |
+| DeatsPopCH | integer | Calculated measure of deaths by population in Chile | - |
+| DeatsPopPY | integer | Calculated measure of deaths by population in Paraguay | - |
+| DeatsPopUY | integer | Calculated measure of deaths by population in Uruguay | - |
+
+
+
+* #### Recovered
+
+| Field Name | Data Type | Description | Source |
+| ----------- | ----------- | ----------- | ----------- |
+| Dates Reformatted | date | Dates with format changed from English to Spanish | JHU CSSE |
+| Index | integer | Table Index | Power BI |
+| Original Date | date | Original date of new daily cases | JHU CSSE |
+| PrevObjRecUY | integer | Calculated column with the value from the previous date for Uruguay  | - |
+| RecoveredUY | integer | Total recovered in Uruguay | JHU CSSE |
+| Uruguay | integer | New daily recovered in Uruguay | JHU CSSE |
+
+
+* #### Tests
+
+| Field Name | Data Type | Description | Source |
+| ----------- | ----------- | ----------- | ----------- |
+| Country | string | Country | OWID |
+| Date | date | Date of new daily tests | OWID |
+| Population | integer | Total population of the country | OWID |
+| Tests | integer |  Total tests in the country | OWID |
+| Tests (per 10 000 population) | integer |  Number of tests per 10 000 population in the country | OWID |
+
+
+* #### Health Force and Population
 
 | Field Name | Data Type | Description | Source |
 | ----------- | ----------- | ----------- | ----------- |
@@ -73,15 +132,24 @@ The project is already live and automatically updating information on a daily ba
 | Population | integer | Total population of the country | WHO |
 
 
-#### Tests
+
+* #### Cases and Deaths
 
 | Field Name | Data Type | Description | Source |
 | ----------- | ----------- | ----------- | ----------- |
-| Country | string | Country | OWID |
-| Date | date | Date | OWID |
-| Population | integer | Total population of the country | OWID |
-| Tests | integer |  Total tests in the country | OWID |
-| Tests (per 10 000 population) | integer |  Number of tests per 10 000 population in the country | OWID |
+| Cases | integer |Total cases grouped by country | JHU CSSE |
+| Country | string | Country | JHU CSSE |
+| Dates Reformatted | date | New daily cases dates with format changed from English to Spanish | JHU CSSE |
+| Deaths | integer | Total deaths grouped by country | JHU CSSE |
+| Index | integer | Table Index | Power BI |
 
 
+
+* #### Calcs
+
+| Field Name | Data Type | Description | Source |
+| ----------- | ----------- | ----------- | ----------- |
+| DeathRateUY | decimal | Calculated field with the rate of deaths in Uruguay | - |
+| RecoveredRateUY | decimal | Calculated field with the rate of recovered in Uruguay | - |
+| Refresh Date | date | Latest date of data refresh | - |
 
