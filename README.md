@@ -1,5 +1,5 @@
 # Analysis of Coronavirus in Uruguay
-![](/Coronavirus_Logo.jpeg)
+![](/Images/Coronavirus_Logo.jpg)
 
 The aim of this project is to showcase the current and historical trend in Coronavirus infections in Uruguay, and compare them to the regional trends.
 
@@ -7,22 +7,24 @@ The project is already live and automatically updating information on a daily ba
 [Coronavirus in Uruguay](https://bit.ly/3a6ggZT)
 
 
-## File Descriptions
+## Table of Contents
 
-1. Coronavirus in Uruguay.pbix: The latest Power BI file with all the data visualizations.
-2. RegionalHealthForce.xlsx: The Excel file with the static data (Nurses, Medics and Hospital Beds by Country).
-3. DataModel.png: The screen capture of the data model with the structure of the tables and the fields on each table.
-4. Coronavirus_Logo.jpg: The Coronavirus Logo.
+## 1. Files Description
+
+1. `Coronavirus in Uruguay.pbix:` The latest Power BI file with all the data visualizations.
+2. `RegionalHealthForce.xlsx:` The Excel file with the static data (Nurses, Medics and Hospital Beds by Country).
+3. `Images Folder:` All the images used here.
 
 
-## Tecnologies Used:
+## 2. Technologies Used:
 
-* Power BI (data visualization)
+* Power BI Desktop (creation of data model and visualizations)
+* Power BI Service (daily data refresh and publish to web)
 * GitHub (data files storage)
 * Excel (data sources)
 
 
-## Data Sources:
+## 3. Data Sources:
 
 1. For daily cases, deaths and recovered patients data:
 [Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE) repository](https://github.com/CSSEGISandData/COVID-19).
@@ -34,5 +36,21 @@ The project is already live and automatically updating information on a daily ba
 [Our World in Data repository](https://github.com/owid/covid-19-data/tree/master/public/data).
 
 
-## Data Model:
-![](/DataModel.PNG)
+## 4. Data Model:
+![](/Images/DataModel.PNG)
+
+
+### Tables and fields
+
+#### Dates Table
+
+| Field Name | Data Type | Description | Source |
+| ----------- | ----------- | ----------- | ----------- |
+| Date (bins) | date | Dates grouped by weekly bins | JHU CSSE |
+| Dates Reformatted | date | Dates with format changed from English to Spanish | JHU CSSE |
+| Max Date | date | Calculated field to display the latest data update | JHU CSSE |
+
+
+
+
+
