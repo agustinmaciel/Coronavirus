@@ -46,55 +46,55 @@ The project is already live and automatically updating information on a daily ba
 
 | Field Name | Data Type | Description | Source |
 | ----------- | ----------- | ----------- | ----------- |
-| Date (bins) | date | New daily cases dates grouped by weekly bins | JHU CSSE |
-| Dates Reformatted | date | New daily cases dates with format changed from English to Spanish | JHU CSSE |
-| Max Date | date | Calculated field to display the latest data update | JHU CSSE |
+| Date (bins) | date | Aggregated cases dates grouped by weekly bins | JHU CSSE |
+| Dates Reformatted | date | Aggregated cases dates with format changed from English to Spanish | JHU CSSE |
+| Max Date | date | Calculated measure to create the week over week animation in the scatter plot | JHU CSSE |
 
 
 * #### Cases
 
 | Field Name | Data Type | Description | Source |
 | ----------- | ----------- | ----------- | ----------- |
-| Argentina | integer | New daily cases in Argentina | JHU CSSE |
-| Brazil | integer | New daily cases in Brazil | JHU CSSE |
-| Chile | integer | New daily cases in Chile | JHU CSSE |
-| Date | date | Date of new daily cases | JHU CSSE |
-| Dates Reformatted | date | Dates with format changed from English to Spanish | JHU CSSE |
-| Index | integer | Table Index | Power BI |
-| NewCasesUY | integer | Total cases in Uruguay | JHU CSSE |
-| Original Date | date | Original date of new daily cases | JHU CSSE |
-| Paraguay | integer | New daily cases in Uruguay | JHU CSSE |
-| PrevObjUY | integer | Calculated column with the value from the previous date for Uruguay | - |
-| Uruguay | integer | New daily cases in Uruguay | JHU CSSE |
-| CasesPopAR | integer | Calculated measure of cases by population in Argentina | - |
-| CasesPopBR | integer | Calculated measure of cases by population in Brazil | - |
-| CasesPopCH | integer | Calculated measure of cases by population in Chile | - |
-| CasesPopPY | integer | Calculated measure of cases by population in Paraguay | - |
-| CasesPopUY | integer | Calculated measure of cases by population in Uruguay | - |
+| Argentina | integer | Aggregated cases in Argentina | JHU CSSE |
+| Brazil | integer | Aggregated cases in Brazil | JHU CSSE |
+| Chile | integer | Aggregated cases in Chile | JHU CSSE |
+| Date | date | Date of aggregated cases | JHU CSSE |
+| Dates Reformatted | date | Dates of aggregated cases with format changed from English to Spanish | JHU CSSE |
+| Index | integer | Table Index | - |
+| NewCasesUY | integer | Calculated column with the new daily cases in Uruguay | - |
+| Original Date | date | Original date of aggregated cases | JHU CSSE |
+| Paraguay | integer | Aggregated cases in Paraguay | JHU CSSE |
+| PrevObjUY | integer | Calculated column with the aggregated cases value from the previous date for Uruguay | - |
+| Uruguay | integer | Aggregated cases in Uruguay | JHU CSSE |
+| CasesPopAR | integer | Calculated measure of total cases per 10.000 population in Argentina | - |
+| CasesPopBR | integer | Calculated measure of total cases per 10.000 population in Brazil | - |
+| CasesPopCH | integer | Calculated measure of total cases per 10.000 population in Chile | - |
+| CasesPopPY | integer | Calculated measure of total cases per 10.000 population in Paraguay | - |
+| CasesPopUY | integer | Calculated measure of total cases per 10.000 population in Uruguay | - |
 
 
 * #### Deaths
 
 | Field Name | Data Type | Description | Source |
 | ----------- | ----------- | ----------- | ----------- |
-| Argentina | integer | New daily deaths in Argentina | JHU CSSE |
-| Brazil | integer | New daily deaths in Brazil | JHU CSSE |
-| Chile | integer | New daily deaths in Chile | JHU CSSE |
-| Dates Reformatted | date | Dates with format changed from English to Spanish | JHU CSSE |
-| DeathsUY | integer | Total deaths in Uruguay | JHU CSSE |
-| Index | integer | Table Index | Power BI |
-| Paraguay | integer | New daily deaths in Paraguay | JHU CSSE |
-| PrevObjAR | integer | Calculated column with the value from the previous date for Argentina | - |
-| PrevObjBR | integer | Calculated column with the value from the previous date for Brazil  | - |
-| PrevObjCH | integer | Calculated column with the value from the previous date for Chile  | - |
-| PrevObjPY | integer | Calculated column with the value from the previous date for Paraguay  | - |
-| PrevObjUY | integer | Calculated column with the value from the previous date for Uruguay  | - |
-| Uruguay | integer | New daily deaths in Uruguay | JHU CSSE |
-| DeatsPopAR | integer | Calculated measure of deaths by population in Argentina | - |
-| DeatsPopBR | integer | Calculated measure of deaths by population in Brazil | - |
-| DeatsPopCH | integer | Calculated measure of deaths by population in Chile | - |
-| DeatsPopPY | integer | Calculated measure of deaths by population in Paraguay | - |
-| DeatsPopUY | integer | Calculated measure of deaths by population in Uruguay | - |
+| Argentina | integer | Aggregated deaths in Argentina | JHU CSSE |
+| Brazil | integer | Aggregated deaths in Brazil | JHU CSSE |
+| Chile | integer | Aggregated deaths in Chile | JHU CSSE |
+| Dates Reformatted | date | Dates of aggregated deaths with format changed from English to Spanish | JHU CSSE |
+| DeathsUY | integer | Calculated column with the new daily deaths in Uruguay | - |
+| Index | integer | Table Index | - |
+| Paraguay | integer | Aggregated deaths in Paraguay | JHU CSSE |
+| PrevObjAR | integer | Calculated column with the aggregated deaths value from the previous date for Argentina | - |
+| PrevObjBR | integer | Calculated column with the aggregated deaths value from the previous date for Brazil  | - |
+| PrevObjCH | integer | Calculated column with the aggregated deaths value from the previous date for Chile  | - |
+| PrevObjPY | integer | Calculated column with the aggregated deaths value from the previous date for Paraguay  | - |
+| PrevObjUY | integer | Calculated column with the aggregated deaths value from the previous date for Uruguay  | - |
+| Uruguay | integer | Aggregated deaths in Uruguay | JHU CSSE |
+| DeatsPopAR | integer | Calculated measure of total deaths per 10.000 population in Argentina | - |
+| DeatsPopBR | integer | Calculated measure of total deaths per 10.000 population in Brazil | - |
+| DeatsPopCH | integer | Calculated measure of total deaths per 10.000 population in Chile | - |
+| DeatsPopPY | integer | Calculated measure of total deaths per 10.000 population in Paraguay | - |
+| DeatsPopUY | integer | Calculated measure of total deaths per 10.000 population in Uruguay | - |
 
 
 
@@ -102,12 +102,12 @@ The project is already live and automatically updating information on a daily ba
 
 | Field Name | Data Type | Description | Source |
 | ----------- | ----------- | ----------- | ----------- |
-| Dates Reformatted | date | Dates with format changed from English to Spanish | JHU CSSE |
-| Index | integer | Table Index | Power BI |
-| Original Date | date | Original date of new daily cases | JHU CSSE |
-| PrevObjRecUY | integer | Calculated column with the value from the previous date for Uruguay  | - |
-| RecoveredUY | integer | Total recovered in Uruguay | JHU CSSE |
-| Uruguay | integer | New daily recovered in Uruguay | JHU CSSE |
+| Dates Reformatted | date | Dates of aggregated recovered with format changed from English to Spanish | JHU CSSE |
+| Index | integer | Table Index | - |
+| Original Date | date | Original date of aggregated recovered | JHU CSSE |
+| PrevObjRecUY | integer | Calculated column with the aggregated recovered value from the previous date for Uruguay  | - |
+| RecoveredUY | integer | Calculated column with the new daily recovered in Uruguay | - |
+| Uruguay | integer | Aggregated recovered in Uruguay | JHU CSSE |
 
 
 * #### Tests
@@ -115,10 +115,10 @@ The project is already live and automatically updating information on a daily ba
 | Field Name | Data Type | Description | Source |
 | ----------- | ----------- | ----------- | ----------- |
 | Country | string | Country | OWID |
-| Date | date | Date of new daily tests | OWID |
-| Population | integer | Total population of the country | OWID |
+| Date | date | Dates of total tests | OWID |
+| Population | integer | Total population of the country | **WHO** |
 | Tests | integer |  Total tests in the country | OWID |
-| Tests (per 10 000 population) | integer |  Number of tests per 10 000 population in the country | OWID |
+| Tests (per 10 000 population) | integer |  Calculated column with the total tests per 10.000 population in the country | - |
 
 
 * #### Health Force and Population
@@ -126,9 +126,9 @@ The project is already live and automatically updating information on a daily ba
 | Field Name | Data Type | Description | Source |
 | ----------- | ----------- | ----------- | ----------- |
 | Country | string | Country | WHO |
-| Hospital Beds (per 10 000 population) | integer | Number of hospital beds per 10 000 population in the country | WHO |
-| Medical Doctors (per 10 000 population) | integer |  Number of medical doctors per 10 000 population in the country | WHO |
-| Nurses (per 10 000 population) | integer |  Number of nurses per 10 000 population in the country | WHO |
+| Hospital Beds (per 10.000 population) | integer | Total hospital beds per 10.000 population in the country | WHO |
+| Medical Doctors (per 10.000 population) | integer | Total medical doctors per 10.000 population in the country | WHO |
+| Nurses (per 10.000 population) | integer | Total nurses per 10.000 population in the country | WHO |
 | Population | integer | Total population of the country | WHO |
 
 
@@ -137,11 +137,11 @@ The project is already live and automatically updating information on a daily ba
 
 | Field Name | Data Type | Description | Source |
 | ----------- | ----------- | ----------- | ----------- |
-| Cases | integer |Total cases grouped by country | JHU CSSE |
+| Cases | integer | Aggregated cases | JHU CSSE |
 | Country | string | Country | JHU CSSE |
-| Dates Reformatted | date | New daily cases dates with format changed from English to Spanish | JHU CSSE |
-| Deaths | integer | Total deaths grouped by country | JHU CSSE |
-| Index | integer | Table Index | Power BI |
+| Dates Reformatted | date | Aggregated cases and deaths dates with format changed from English to Spanish | JHU CSSE |
+| Deaths | integer | Aggregated deaths | JHU CSSE |
+| Index | integer | Table Index | - |
 
 
 
@@ -149,7 +149,7 @@ The project is already live and automatically updating information on a daily ba
 
 | Field Name | Data Type | Description | Source |
 | ----------- | ----------- | ----------- | ----------- |
-| DeathRateUY | decimal | Calculated field with the rate of deaths in Uruguay | - |
-| RecoveredRateUY | decimal | Calculated field with the rate of recovered in Uruguay | - |
+| DeathRateUY | decimal | Calculated measure with the rate of total deaths per total cases in Uruguay | - |
+| RecoveredRateUY | decimal | Calculated measure with the rate of total recovered per total cases in Uruguay | - |
 | Refresh Date | date | Latest date of data refresh | - |
 
